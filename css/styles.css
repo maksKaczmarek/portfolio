@@ -11045,6 +11045,92 @@ html {
   background-color: #1a252f;
 }
 
+
+/* About Section Styles */
+/* About Section Styles */
+#about {
+  padding: 4rem 0;
+  background-color: #007bff; /* Matches the primary color */
+  color: #ffffff;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+#about .divider-custom {
+  margin: 1.5rem 0;
+}
+
+#about .divider-custom-icon {
+  font-size: 2rem;
+  color: #f8f9fa;
+}
+
+#about p.lead {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Cards for Skills and Tools */
+.skill-card {
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #0056b3, #007bff);
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card .card-header {
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.skill-card .list-group-item {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.skill-card .list-group-item i {
+  margin-right: 0.5rem;
+  color: #28a745; /* Green check icon */
+}
+
+.skill-card ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Adjustments for Mobile */
+@media (max-width: 768px) {
+  #about .row {
+    flex-direction: column;
+  }
+
+  #about .skill-card {
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+
+
 /* Contact Me Section Styles */
 #contact {
   padding: 100px 0;
