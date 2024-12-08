@@ -180,21 +180,40 @@
             </div>
         </section>
 
-        <!-- Contact Section-->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form action="https://formspree.io/f/mjkvdyyq" method="POST">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required placeholder="Your Name">
+        <!-- Contact Section -->
+        <section id="contact" class="page-section">
+            <div class="container">
+                <!-- Contact Section Heading -->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required placeholder="Your Email">
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required placeholder="Your Message"></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
+                <!-- Contact Form -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <form action="https://formspree.io/f/mjkvdyyq" method="POST">
+                            <div class="form-group">
+                                <label for="name" class="sr-only">Name</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="sr-only">Message</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-xl">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
