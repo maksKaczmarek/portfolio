@@ -11076,59 +11076,62 @@ html {
   margin-bottom: 1.5rem;
 }
 
-/* Cards for Skills and Tools */
-.skill-card {
-  border: none;
-  border-radius: 10px;
-  background: linear-gradient(145deg, #0056b3, #007bff);
-  color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+/* About Section Styles */
+#about {
+  padding: 60px 0;
+  background-color: rgba(26,188,156,255); /* Main teal color */
 }
 
-.skill-card .card-header {
-  background-color: transparent;
-  color: #ffffff;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  padding: 1rem;
-  text-align: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+.card {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(22, 160, 133, 1); /* Darker teal for contrast */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.skill-card .list-group-item {
-  background-color: transparent;
-  color: #ffffff;
-  border: none;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #ffffff; /* White text for readability */
 }
 
-.skill-card .list-group-item i {
-  margin-right: 0.5rem;
-  color: #28a745; /* Green check icon */
-}
-
-.skill-card ul {
+.card ul {
+  list-style-type: none;
   padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
-/* Adjustments for Mobile */
+.card ul li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.card ul li:before {
+  content: "✔️";
+  margin-right: 8px;
+  color: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(26,188,156,0.85); /* Lighter teal on hover */
+}
+
+.divider-custom-line {
+  background-color: #ffffff; /* White divider lines for contrast */
+}
+
+.divider-custom-icon i {
+  color: #ffffff;
+}
+
+/* Adjust responsive spacing */
 @media (max-width: 768px) {
-  #about .row {
-    flex-direction: column;
-  }
-
-  #about .skill-card {
-    margin-bottom: 1.5rem;
+  .card {
+    margin-bottom: 30px;
   }
 }
-
-
 
 
 /* Contact Me Section Styles */
